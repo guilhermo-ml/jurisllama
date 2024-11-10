@@ -1,0 +1,256 @@
+/* Container Principal */
+.container {
+  display: flex;
+  height: 100vh;
+  color: #e0e0e0;
+}
+
+/* Sidebar (Barra Lateral) */
+.sidebar {
+  width: 250px;
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00bcd4;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #333;
+}
+
+/* Chat Container */
+.chatContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #181818;
+  padding: 1.5rem;
+}
+
+/* Chatbox (Área de Chat) */
+.chatbox {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.userMessage {
+  background-color: #333;
+  color: #ffffff;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  align-self: flex-end;
+  max-width: 75%;
+}
+
+.botMessage {
+  background-color: #00bcd4;
+  color: #000;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  max-width: 75%;
+}
+
+/* Input Container */
+.inputContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #888;
+}
+
+.button {
+  padding: 0.8rem 1.5rem;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: #008c9e;
+}
+
+.sidebar img {
+  margin-bottom: 1rem; /* Adiciona espaço abaixo do logo */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Container de Detalhe da Decisão */
+.detailContainer {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  line-height: 1.6;
+}
+
+/* Título do Processo */
+.detailTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00bcd4;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+/* Conteúdo da Decisão */
+.detailContent {
+  white-space: pre-wrap; /* Preserva quebras de linha no conteúdo */
+}
+
+.paragraph {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid #333;
+}
+
+/* Link de Processo */
+.processLink {
+  color: #00bcd4;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.processLink:hover {
+  color: #008c9e;
+}
+
+
+/* Estilos para a página de exibição de decisão */
+.decisionContainer {
+  padding: 2rem;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.decisionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00bcd4;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.decisionContent p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Modal Overlay */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Garante que o modal fique acima dos outros elementos */
+}
+
+.modalContent {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.uploadButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #00bcd4;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.uploadButton:hover {
+  background-color: #008c9e;
+}
+
+.closeButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #f44336;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.closeButton:hover {
+  background-color: #d32f2f;
+}
+
+.suggestion {
+  margin-top: 0.5rem;
+  background-color: #333;
+  color: #00bcd4;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}

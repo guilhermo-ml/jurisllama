@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+
+/* Container de Detalhe da Decisão */
+.detailContainer {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  line-height: 1.6;
+}
+
+/* Título do Processo */
+.detailTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00bcd4;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+/* Conteúdo da Decisão */
+.detailContent {
+  white-space: pre-wrap; /* Preserva quebras de linha no conteúdo */
+}
+
+.paragraph {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid #333;
+}
+
+/* Negrito para ênfase */
+.bold {
+  font-weight: bold;
+}
+
+/* Links internos */
+.processLink {
+  color: #00bcd4;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.processLink:hover {
+  color: #008c9e;
+}
