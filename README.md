@@ -1,3 +1,36 @@
+
+Here's the README in English for JurisLlama:
+
+JurisLlama 🦙
+Project developed for the Hackathon Llama Impact Brazil 2024
+
+JurisLlama is an AI-based legal assistant designed to aid in the analysis of judicial rulings. The system leverages advanced language models to process legal documents, offering valuable insights to streamline the creation and review of rulings, enabling fast and detailed analysis of legal cases.
+
+🚀 Project Objective
+The objective of JurisLlama is to optimize time and accuracy in judicial case analysis by providing a system capable of:
+
+Reading and interpreting judicial rulings from PDFs.
+Summarizing and extracting essential information from decisions, facilitating the reuse of arguments.
+Searching for related jurisprudence, offering relevant insights for new judicial decisions.
+🛠️ System Architecture
+JurisLlama is composed of three main technologies:
+
+FastAPI: Backend for API management and exposure.
+Groq and Llama: Inference models for natural language processing, using Llama 3.2 for legal text analysis.
+LangChain and ChromaDB: Support for vector storage and retrieval, allowing quick and contextualized queries in a database of judicial decisions.
+⚙️ Technologies Used
+FastAPI: For building RESTful APIs.
+Groq: Optimized hardware infrastructure for running AI models.
+Llama 3.2: Language model for interpreting and analyzing legal documents.
+LangChain: Organizes and stores information in contextual memory.
+ChromaDB: Vector database for efficient information retrieval.
+Next.js: User interface for visualizing and interacting with the system.
+📝 Key Features
+PDF Upload: Upload legal documents for analysis.
+Ruling Summarization: Generates a structured summary of essential information.
+Jurisprudence Search: Searches previous rulings based on the context of the uploaded ruling.
+User Interface: Next.js frontend for intuitive navigation and result visualization.
+
 JurisLlama 🦙
 Projeto desenvolvido para o Hackathon Llama Impact Brazil 2024
 
